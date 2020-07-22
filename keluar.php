@@ -1,9 +1,9 @@
 <?php
-session_start();
-if (!isset($_SESSION["login"])) {
-    header("Location: login.php");
-    exit;
-}
+// session_start();
+// if (!isset($_SESSION["login"])) {
+//     header("Location: login.php");
+//     exit;
+// }
 require 'functions.php';
 
 $kas = query("SELECT * FROM kas WHERE jenis = 'keluar'");
